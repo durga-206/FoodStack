@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SignUp</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      #signup {
+        display: none;
+      }
+      #signin {
+        display: none;
+      }
+      #signup .col-6 {
+        border: none;
+        outline: none;
+      }
+      /* #signup h1{
+        color:purple;
+      } */
+      #signup .row {
+        box-shadow: 2px 2px 5px 4px gray;
+        border-radius: 10px;
+      }
+      #signin .row {
+        box-shadow: 2px 2px 5px 4px gray;
+        border-radius: 10px;
+      }
+      input {
+        background-color: lightgrey !important;
+      }
+      #hello {
+        text-shadow: 2px 2px 3px white;
+      }
+      #welcome {
+        text-shadow: 2px 2px 3px white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button class="btn btn-danger p-2 m-3" onclick="displayUp()">
+      Account
+    </button>
+    <center>
+      <div class="container m-5 w-50" id="signup">
+        <div class="row rounded bg-danger">
+          <div class="col-lg-6 col-md-6 pt-5 mt-5 pb-5">
+            <h1 class="text-white display-5 pt-5 fw-bold" id="welcome">
+              Welcome Back!
+            </h1>
+            <p class="lead text-white">
+              To keep connected with us please loign with your personal info
+            </p>
+            <button
+              onclick="displayIn()"
+              class="btn border border-white rounded-pill text-white px-5 py-2 my-2 mb-4"
+            >
+              SIGN IN
+            </button>
+          </div>
+          <div class="col-lg-6 col-md-6 bg-white">
+            <!-- <button class="btn float-end fw-bold" id=close>X</button> -->
+            <center>
+              <form action="" class="py-5">
+                <h1 class="text-center py-3 display-5 fw-bold">
+                  Create Account
+                </h1>
+                <p class="lead pb-3">Use your email for registration</p>
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="my-3 form-control my-2 px-3 py-2 w-75"
+                />
+                <input
+                  type="email"
+                  class="my-3 form-control my-2 px-3 py-2 w-75"
+                  placeholder="Email"
+                />
+                <input
+                  type="password"
+                  class="my-3 form-control my-2 px-3 py-2 w-75"
+                  placeholder="Password"
+                />
+                <button
+                 class="btn btn-danger rounded-pill m-3 px-5 py-2 fw-bold"
+                >
+                  SIGN UP
+                </button>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+    </center>
+
+    <!-- <center>
+      <div class="container m-5 w-50" id="signin">
+        <div class="row rounded bg-danger">
+          <div class="col-lg-6 col-md-6 bg-white">
+            <center>
+              <form action="" class="py-5">
+                <h1 class="text-center py-3 display-5 fw-bold">Sign in</h1>
+                <p class="lead pb-3">Use your account</p>
+                <input
+                  type="email"
+                  class="my-3 form-control my-2 px-3 py-2 w-75"
+                  placeholder="Email"
+                />
+                <input
+                  type="password"
+                  class="my-3 form-control my-2 px-3 py-2 w-75"
+                  placeholder="Password"
+                />
+                <p class="lead">
+                  <a href="#" class="text-decoration-none text-black"
+                    >Forget your password?</a
+                  >
+                </p>
+                <button
+                  class="btn btn-danger rounded-pill m-3 px-5 py-2 fw-bold"
+                >
+                  SIGN IN
+                </button>
+              </form>
+            </center>
+          </div>
+          <div class="col-lg-6 col-md-6 pt-5 pb-5 mt-5">
+            <h1 class="text-white display-5 pt-5 fw-bold" id="hello">
+              Hello Friend!
+            </h1>
+            <p class="lead text-white px-5 pt-2">
+              Enter your personal details and start journey with us
+            </p>
+            <button
+              onclick="displayUp()"
+              class="btn border border-white rounded-pill text-white px-5 py-2 my-2 mb-4"
+            >
+              SIGN UP
+            </button>
+          </div>
+        </div>
+      </div>
+    </center> -->
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function displayUp() {
+        document.getElementById("signup").style.display = "block";
+      }
+      function display() {
+        document.getElementsByTagName("h1")[0].innerHTML = "Welcome Back!";
+        document.getElementsByTagName("p")[1].innerHTML = "Use Your account";
+        document.getElementsByTagName("p")[0].innerHTML =
+          "Enter your personal details and start journey with us";
+        document.getElementsByTagName("h1")[1].innerHTML = "Sign in";
+        document.getElementsByTagName("button")[2].innerHTML = "SIGN IN";
+        document.getElementsByTagName("input")[0].style.display = "none";
+        document.getElementsByTagName("button")[1].innerHTML = "SIGN UP";
+      }
+      function displayIn() {
+        document.getElementsByTagName("h1")[0].innerHTML = "Hello Friend!";
+        document.getElementsByTagName("p")[1].innerHTML = "Use Your account";
+        document.getElementsByTagName("p")[0].innerHTML =
+          "Enter your personal details and start journey with us";
+        document.getElementsByTagName("h1")[1].innerHTML = "Sign in";
+        document.getElementsByTagName("button")[2].innerHTML = "SIGN IN";
+        document.getElementsByTagName("input")[0].style.display = "none";
+        document.getElementsByTagName("button")[1].innerHTML = "SIGN UP";
+      }
+    </script>
+  </body>
+</html>
